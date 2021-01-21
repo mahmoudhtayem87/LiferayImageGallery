@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewContainerRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewContainerRef, OnInit, ViewChild, AfterViewChecked } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import LiferayParams from '../types/LiferayParams'
 import { DocumentsRootObject, ImageObg } from '../types/document';
@@ -6,6 +6,8 @@ declare const Liferay: any;
 import { DomSanitizer } from '@angular/platform-browser';
 import { ModalDialogService, SimpleModalComponent } from 'ngx-modal-dialog';
 import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
+import { ChangeDetectorRef } from '@angular/core';
+import { templateJitUrl } from '@angular/compiler';
 
 
 @Component({
@@ -22,7 +24,8 @@ export class AppComponent implements AfterViewInit {
 		showDeleteControl: false,
 		showImageTitle: false,
 	};
-	public isEmpty:boolean=false;
+	public errorMsg : string = "";
+	public isEmpty: boolean = false;
 	public totalPages: number = 0;
 	// gallery images
 	images: GALLERY_IMAGE[] = [];
@@ -65,13 +68,14 @@ export class AppComponent implements AfterViewInit {
 	}
 	params: LiferayParams;
 	labels: any;
-	isLoading: boolean = true;
+	isLoading: boolean = false;
 	public pages: Array<number> = [];
 	public pageImagesFullObject: ImageObg[];
 
 	public page: number = 1;
 
-	constructor(public Http: HttpClient,
+
+	constructor(public Http: HttpClient, private cdRef: ChangeDetectorRef,
 		public modalService: ModalDialogService, public viewRef: ViewContainerRef) {
 		this.labels = {
 			configuration: Liferay.Language.get('configuration'),
@@ -87,14 +91,26 @@ export class AppComponent implements AfterViewInit {
 	get configurationJSON() {
 		return JSON.stringify(this.params.configuration, null, 2);
 	}
+	get FolderID() {
+		return this.params.configuration.portletInstance.FolderID;
+	}
 	public get Headless_Documents() {
-		return `${Liferay.ThemeDisplay.getPortalURL()}/o/headless-delivery/v1.0/document-folders/${this.params.configuration.portletInstance.FolderID}/documents?p_auth=${Liferay.authToken}&pageSize=${this.PageSize}&page=${this.page}`;
+		return `${Liferay.ThemeDisplay.getPortalURL()}/o/headless-delivery/v1.0/document-folders/${this.FolderID}/documents?p_auth=${Liferay.authToken}&pageSize=${this.PageSize}&page=${this.page}`;
 	}
 	get PageSize() {
 		return parseInt(this.params.configuration.portletInstance["PageSize"]);
 	}
 	public loadImages() {
-		this.isLoading = true;
+		if (this.FolderID == null || this.FolderID == undefined || this.FolderID == "") {
+			console.log("No folder ID found");
+			this.isEmpty = true;
+			this.errorMsg = "Please provide a valid folder ID";
+			this.cdRef.detectChanges();
+			return;
+		}
+		else {
+			this.isLoading = true;
+		}
 		this.pages = new Array<number>();
 		this.Http.get(this.Headless_Documents)
 			.subscribe(docs => {
@@ -124,10 +140,16 @@ export class AppComponent implements AfterViewInit {
 					this.pages.push(index);
 				}
 				this.isLoading = false;
-				if(this.pageImagesFullObject.length <=0)
+				if (this.pageImagesFullObject.length <= 0)
+					this.isEmpty = true;
+			},error=>{
+				this.isLoading = false;
 				this.isEmpty = true;
+				this.errorMsg = error.message;
+				this.cdRef.detectChanges();
 			});
 	}
+
 	loadImage(_page: number) {
 		this.page = _page;
 		this.loadImages();
