@@ -1,0 +1,452 @@
+{
+    "actions": {
+        "get": {
+            "method": "GET",
+            "href": "http://localhost:8080/o/headless-delivery/v1.0/document-folders/{documentFolderId}/documents"
+        },
+        "create": {
+            "method": "POST",
+            "href": "http://localhost:8080/o/headless-delivery/v1.0/document-folders/{documentFolderId}/documents"
+        }
+    },
+    "facets": [],
+    "items": [{
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/42755/Preview-1000x0/4.jpg?t=1605682535467",
+            "height": 440,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 35714,
+            "width": 780
+        }, {
+            "contentUrl": "/o/adaptive-media/image/42755/Thumbnail-300x300/4.jpg?t=1605682535467",
+            "height": 169,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 8775,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/4.jpg/966b1026-2083-69e8-a8b3-821c5a64d56a?version=1.0&t=1605682535467",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2020-11-18T06:55:35Z",
+        "dateModified": "2020-11-18T06:55:35Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/jpeg",
+        "fileExtension": "jpg",
+        "id": 42755,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 35148,
+        "taxonomyCategoryBriefs": [],
+        "title": "4.jpg"
+    }, {
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/42801/Preview-1000x0/8.png?t=1605682567775",
+            "height": 440,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 578244,
+            "width": 780
+        }, {
+            "contentUrl": "/o/adaptive-media/image/42801/Thumbnail-300x300/8.png?t=1605682567775",
+            "height": 169,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 91632,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/8.png/1cd336f5-011d-9c70-e300-188b9ecc5e61?version=1.0&t=1605682567775",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2020-11-18T06:55:43Z",
+        "dateModified": "2020-11-18T06:56:07Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/png",
+        "fileExtension": "png",
+        "id": 42801,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 544034,
+        "taxonomyCategoryBriefs": [],
+        "title": "8.png"
+    }, {
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/42789/Preview-1000x0/7.jpeg?t=1605682567795",
+            "height": 440,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 44325,
+            "width": 780
+        }, {
+            "contentUrl": "/o/adaptive-media/image/42789/Thumbnail-300x300/7.jpeg?t=1605682567795",
+            "height": 169,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 9595,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/7.jpeg/b3ea0013-c59d-d4e8-c2bd-ac814474ccca?version=1.0&t=1605682567795",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2020-11-18T06:55:43Z",
+        "dateModified": "2020-11-18T06:56:07Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/jpeg",
+        "fileExtension": "jpeg",
+        "id": 42789,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 75428,
+        "taxonomyCategoryBriefs": [],
+        "title": "7.jpeg"
+    }, {
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/42773/Preview-1000x0/6.jpg?t=1605682567806",
+            "height": 440,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 53435,
+            "width": 780
+        }, {
+            "contentUrl": "/o/adaptive-media/image/42773/Thumbnail-300x300/6.jpg?t=1605682567806",
+            "height": 169,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 11400,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/6.jpg/533490d2-c1a8-c7bd-16b1-7e6d583afbcc?version=1.0&t=1605682567806",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2020-11-18T06:55:43Z",
+        "dateModified": "2020-11-18T06:56:07Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/jpeg",
+        "fileExtension": "jpg",
+        "id": 42773,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 44178,
+        "taxonomyCategoryBriefs": [],
+        "title": "6.jpg"
+    }, {
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/42767/Preview-1000x0/5.jpg?t=1605682567819",
+            "height": 440,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 54441,
+            "width": 793
+        }, {
+            "contentUrl": "/o/adaptive-media/image/42767/Thumbnail-300x300/5.jpg?t=1605682567819",
+            "height": 166,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 10679,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/5.jpg/480f7c07-5cc9-b909-db31-448a6d23122f?version=1.0&t=1605682567819",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2020-11-18T06:55:43Z",
+        "dateModified": "2020-11-18T06:56:07Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/jpeg",
+        "fileExtension": "jpg",
+        "id": 42767,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 110983,
+        "taxonomyCategoryBriefs": [],
+        "title": "5.jpg"
+    }, {
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/52252/Preview-1000x0/Screen+Shot+2021-01-09+at+2.21.02+AM.png?t=1610211614896",
+            "height": 963,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 1870004,
+            "width": 1000
+        }, {
+            "contentUrl": "/o/adaptive-media/image/52252/Thumbnail-300x300/Screen+Shot+2021-01-09+at+2.21.02+AM.png?t=1610211614896",
+            "height": 289,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 201372,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/Screen+Shot+2021-01-09+at+2.21.02+AM.png/0b0a308a-b71f-71ad-f308-5fcc493e5132?version=1.0&t=1610211614896",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2021-01-09T17:00:14Z",
+        "dateModified": "2021-01-09T17:00:14Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/png",
+        "fileExtension": "png",
+        "id": 52252,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 1850624,
+        "taxonomyCategoryBriefs": [],
+        "title": "Screen Shot 2021-01-09 at 2.21.02 AM.png"
+    }, {
+        "actions": {
+            "get": {
+                "method": "GET",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "replace": {
+                "method": "PUT",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "update": {
+                "method": "PATCH",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            },
+            "delete": {
+                "method": "DELETE",
+                "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}"
+            }
+        },
+        "adaptedImages": [{
+            "contentUrl": "/o/adaptive-media/image/52284/Preview-1000x0/riyad_pay_tcm8-13040.jpg?t=1610211632868",
+            "height": 320,
+            "resolutionName": "Preview-1000x0",
+            "sizeInBytes": 15683,
+            "width": 391
+        }, {
+            "contentUrl": "/o/adaptive-media/image/52284/Thumbnail-300x300/riyad_pay_tcm8-13040.jpg?t=1610211632868",
+            "height": 246,
+            "resolutionName": "Thumbnail-300x300",
+            "sizeInBytes": 10310,
+            "width": 300
+        }],
+        "contentUrl": "/documents/20121/42752/riyad_pay_tcm8-13040.jpg/a5ff2275-58ee-078a-0bf1-fe9284aaac65?version=1.0&t=1610211632868",
+        "creator": {
+            "additionalName": "",
+            "contentType": "UserAccount",
+            "familyName": "Liferay",
+            "givenName": "Admin",
+            "id": 40069,
+            "name": "Admin Liferay"
+        },
+        "customFields": [],
+        "dateCreated": "2021-01-09T17:00:32Z",
+        "dateModified": "2021-01-09T17:00:32Z",
+        "description": "",
+        "documentFolderId": 42752,
+        "documentType": {
+            "availableLanguages": [],
+            "contentFields": [],
+            "description": "",
+            "name": "Basic Document"
+        },
+        "encodingFormat": "image/jpeg",
+        "fileExtension": "jpg",
+        "id": 52284,
+        "keywords": [],
+        "numberOfComments": 0,
+        "relatedContents": [],
+        "siteId": 20121,
+        "sizeInBytes": 39118,
+        "taxonomyCategoryBriefs": [],
+        "title": "riyad_pay_tcm8-13040.jpg"
+    }],
+    "lastPage": 1,
+    "page": 1,
+    "pageSize": 20,
+    "totalCount": 7
+}

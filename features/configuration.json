@@ -1,0 +1,36 @@
+{
+    "$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+    "system": {
+        "category": "LiferayImageGaller",
+        "name": "LiferayImageGaller",
+        "fields": {
+            "fruit": {
+                "type": "string",
+                "name": "fruit",
+                "description": "fruit-help",
+                "default": "orange",
+                "options": {
+                    "orange": "an-orange",
+                    "pear": "a-pear",
+                    "apple": "an-apple"
+                }
+            }
+        }
+    },
+    "portletInstance": {
+        "fields": {
+            "FolderID": {
+                "type": "string",
+                "name": "FolderID",
+                "description": "",
+                "default": ""
+            },
+            "PageSize": {
+                "type": "number",
+                "name": "PageSize",
+                "description": "",
+                "default": "5"
+            }
+        }
+    }
+}

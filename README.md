@@ -1,2 +1,2 @@
-# LiferayImageGaller
+# LiferayImageGallery
 
