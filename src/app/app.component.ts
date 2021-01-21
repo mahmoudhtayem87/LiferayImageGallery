@@ -128,8 +128,8 @@ export class AppComponent implements AfterViewInit {
 					this.images.push(
 						{
 							url: image.big,
-							altText: 'woman-in-black-blazer-holding-blue-cup',
-							title: 'woman-in-black-blazer-holding-blue-cup',
+							altText: '',
+							title: '',
 							thumbnailUrl: image.medium
 						}
 					);
