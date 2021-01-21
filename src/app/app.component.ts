@@ -24,7 +24,7 @@ export class AppComponent implements AfterViewInit {
 		showDeleteControl: false,
 		showImageTitle: false,
 	};
-	public errorMsg : string = "";
+	public errorMsg: string = "";
 	public isEmpty: boolean = false;
 	public totalPages: number = 0;
 	// gallery images
@@ -142,7 +142,8 @@ export class AppComponent implements AfterViewInit {
 				this.isLoading = false;
 				if (this.pageImagesFullObject.length <= 0)
 					this.isEmpty = true;
-			},error=>{
+				this.cdRef.detectChanges();
+			}, error => {
 				this.isLoading = false;
 				this.isEmpty = true;
 				this.errorMsg = error.message;
