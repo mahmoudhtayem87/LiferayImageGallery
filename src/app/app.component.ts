@@ -83,6 +83,7 @@ export class AppComponent implements AfterViewInit {
 			contextPath: Liferay.Language.get('context-path'),
 			portletElementId: Liferay.Language.get('portlet-element-id'),
 		}
+		
 
 	}
 	public ngAfterViewInit() {
@@ -101,16 +102,6 @@ export class AppComponent implements AfterViewInit {
 		return parseInt(this.params.configuration.portletInstance["PageSize"]);
 	}
 	public loadImages() {
-		if (this.FolderID == null || this.FolderID == undefined || this.FolderID == "") {
-			console.log("No folder ID found");
-			this.isEmpty = true;
-			this.errorMsg = "Please provide a valid folder ID";
-			this.cdRef.detectChanges();
-			return;
-		}
-		else {
-			this.isLoading = true;
-		}
 		this.pages = new Array<number>();
 		this.Http.get(this.Headless_Documents)
 			.subscribe(docs => {
@@ -153,7 +144,20 @@ export class AppComponent implements AfterViewInit {
 
 	loadImage(_page: number) {
 		this.page = _page;
-		this.loadImages();
+		if (this.FolderID == null || this.FolderID == undefined || this.FolderID == "") {
+			console.log("No folder ID found");
+			this.isEmpty = true;
+			this.errorMsg = "Please provide a valid folder ID";
+			this.cdRef.detectChanges();
+			return;
+		}
+		else {
+			this.isLoading = true;
+		}
+		setTimeout(() => {
+			this.loadImages();
+		},100);
+		
 	}
 	public previous() {
 		this.page = this.page - 1;
