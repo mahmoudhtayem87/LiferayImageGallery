@@ -17,4 +17,9 @@ i.	Btn-group
 1.	Button(s) tag
 a.	Text / i tag with font awesome icon 
 
+[![Screen-Shot-2021-01-22-at-12-34-06-AM.png](https://i.postimg.cc/Kj9YYQ15/Screen-Shot-2021-01-22-at-12-34-06-AM.png)](https://postimg.cc/H8ymZw4J)
+
+[![Screen-Shot-2021-01-22-at-12-34-20-AM.png](https://i.postimg.cc/PqmrDdLJ/Screen-Shot-2021-01-22-at-12-34-20-AM.png)](https://postimg.cc/R3ZB55Lx)
+
+[![Screen-Shot-2021-01-22-at-12-34-35-AM.png](https://i.postimg.cc/PxyX6KQk/Screen-Shot-2021-01-22-at-12-34-35-AM.png)](https://postimg.cc/PpLnJW76)
 
