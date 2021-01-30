@@ -24,15 +24,14 @@
                 </div>
             </div>
         </div>
-        <div class="row" *ngIf="pageImagesFullObject && !isLoading">
-            <div class="col-lg-4 col-md-4 col-sm-12 p-2 " (click)="openGallery(i)" *ngFor="let image of pageImagesFullObject;let i = index">
-                <div class="imageContainer scale-up-hor-center " [ngStyle]="{'background': 'url(' + image.medium + ')'}">
+    </div>
+    <div class="row" *ngIf="pageImagesFullObject && !isLoading">
+        <div class="col-lg-4 col-md-4 col-sm-12 p-2 " (click)="openGallery(i)" *ngFor="let image of pageImagesFullObject;let i = index">
+            <div class="imageContainer scale-up-hor-center " [ngStyle]="{'background': 'url(' + image.medium + ')'}">
 
-                </div>
             </div>
         </div>
     </div>
-
     <div *ngIf="isLoading" style="width:100%!important; height: 300px!important; display: flex;">
         <div style="margin: auto!important;">
             <svg width="135" height="135" viewBox="0 0 135 135" class="loading" xmlns="http://www.w3.org/2000/svg" fill="#fff">

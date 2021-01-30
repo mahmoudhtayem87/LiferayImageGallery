@@ -108,6 +108,7 @@ export class AppComponent implements AfterViewInit {
 				var data = docs as DocumentsRootObject;
 				this.images = [];
 				this.pageImagesFullObject = [];
+				console.log(data.items.length);
 				for (var index = 0; index < data.items.length; index++) {
 					var image: ImageObg = new ImageObg();
 					image.big = data.items[index].contentUrl;
@@ -124,6 +125,7 @@ export class AppComponent implements AfterViewInit {
 							thumbnailUrl: image.medium
 						}
 					);
+					console.log(data.items.length);
 				}
 				var lastPage = data.lastPage;
 				this.totalPages = data.lastPage;
